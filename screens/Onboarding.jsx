@@ -33,7 +33,7 @@ if(!fontsLoaded){
 
 
     return(
-        <Onboarding
+        <Onboarding 
         SkipButtonComponent={Skip}
         NextButtonComponent={Next}
         //skip can have .replace to remove from stack if skip is clicked
@@ -45,19 +45,19 @@ if(!fontsLoaded){
                 backgroundColor: "#F4F7F8",
                 image: <Image style={{width:320, height:320}}source= {require("../assets/onboarding/screen1.png")}/>,
                 title: <Text style= {{color:'#219EBC', fontSize:'43', fontFamily:'Comfortaa', textAlign: 'center'}}>TrackPal</Text>,
-                subtitle: <Text style= {{color:'#219EBC', fontSize:'25', fontFamily:'Comfortaa', paddingTop: '10%', textAlign:'center', padding:'5%'}}>Your virtual assistant</Text>,
+                subtitle: <Text style= {{color:'#219EBC', fontSize:'23', fontFamily:'Comfortaa', paddingTop: '10%', textAlign:'center', padding:'5%'}}>Your virtual assistant in your pocket</Text>,
                 },
                 {
                     backgroundColor: '#8ECAE6',
-                    image: <Image style={{resizeMode: "stretch",width: width * 0.9, height:height/2.8}}source= {require("../assets/onboarding/screen2.png")} />,
-                    title: <Text style= {{color:'#F4F7F8', fontSize:'43', fontFamily:'Comfortaa', textAlign: 'center'}}>Security, Mobility and Assitance</Text>,
-                    subtitle:  <Text style= {{color:'#F4F7F8', fontSize:'25', fontFamily:'Comfortaa', paddingTop:'10%',textAlign:'center', padding: '7%'}}>Feel comfortable</Text>,
+                    image: <Image style={{resizeMode: "stretch",width: width * 1, height:height/2.8, marginRight:'5%', marginTop:'10%'}}source= {require("../assets/onboarding/screen2.png")} />,
+                    title: <Text style= {{color:'#F4F7F8', fontSize:'43', fontFamily:'Comfortaa', textAlign: 'center'}}>Mobility and Assitance</Text>,
+                    subtitle:  <Text style= {{color:'#F4F7F8', fontSize:'23', fontFamily:'Comfortaa', paddingTop:'10%',textAlign:'center', paddingHorizontal: '2.6%'}}>Feel comfortable accomplishing your daily tasks</Text>,
                 },
                 {
                     backgroundColor: '#FFDD89',
                     image: <Image style={{resizeMode: "stretch",width: width * 1, height:height/2.4}}source= {require("../assets/onboarding/screen3.png")} />,
                     title: <Text style= {{color:'#023047', fontSize:'43', fontFamily:'Comfortaa', textAlign:'center'}}>Create an account now</Text>,
-                    subtitle:  <Text style= {{color:'#023047', fontSize:'25', fontFamily:'Comfortaa', paddingTop:'10%',textAlign:'center', padding:'7%'}}>Feel comfortable</Text>,
+                    subtitle:  <Text style= {{color:'#023047', fontSize:'23', fontFamily:'Comfortaa', paddingTop:'10%',textAlign:'center', paddingHorizontal: '3.9%'}}>Your own personal profile that keeps track of your life and safety</Text>,
                 },
             ]}
             />

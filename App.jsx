@@ -8,6 +8,7 @@ import Onboarding from './screens/Onboarding';
 // import SignupScreen from './Screens/SignupScreen';
 import { EventRegister } from 'react-native-event-listeners';
 import { React, useState, useEffect }  from 'react';
+import CurrentLoc from './screens/CurrentLoc';
 // import theme from './theme/theme'
 // import themeContext from './theme/themeContext';
 
@@ -46,9 +47,13 @@ export default function App() {
         <NavigationContainer>
             {/* Removes the top title and expands screen area */}
           <Stack.Navigator screenOptions={{headerShown: false}}>
-            <Stack.Screen
+            {/* <Stack.Screen
             name = "Onboarding"
             component = {Onboarding}
+            /> */}
+            <Stack.Screen
+            name = "CurrentLoc"
+            component = {CurrentLoc}
             />
             {/* <Stack.Screen
             name = "LoginRegister"
